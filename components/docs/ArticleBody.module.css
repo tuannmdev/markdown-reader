@@ -1,0 +1,216 @@
+.body {
+  font-size: var(--article-fs);
+  line-height: 1.75;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.body > :first-child {
+  margin-top: 0;
+}
+
+.body h1,
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6 {
+  position: relative;
+  scroll-margin-top: calc(var(--header-h) + 16px);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.body h1 {
+  margin: 2.5rem 0 1rem;
+  font-size: 2.6em;
+  line-height: 1.05;
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+}
+
+.body h2 {
+  margin: 3rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 1.85em;
+  text-transform: uppercase;
+}
+
+.body h3 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.body h4 {
+  margin: 1.75rem 0 0.5rem;
+  font-size: 1.15em;
+  font-weight: 600;
+}
+
+.body h5,
+.body h6 {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.body :global(.heading-anchor) {
+  margin-left: 0.5rem;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7em;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--accent);
+  opacity: 0;
+}
+
+.body :is(h1, h2, h3, h4, h5, h6):hover :global(.heading-anchor),
+.body :global(.heading-anchor):focus-visible {
+  opacity: 1;
+}
+
+.body p,
+.body ul,
+.body ol,
+.body dl {
+  margin: 0 0 1.15rem;
+}
+
+.body ul,
+.body ol {
+  padding-left: 1.5rem;
+}
+
+.body li {
+  margin: 0.3rem 0;
+}
+
+.body li > p {
+  margin-bottom: 0.4rem;
+}
+
+.body li::marker {
+  color: var(--muted);
+}
+
+.body :global(.contains-task-list) {
+  padding-left: 0.25rem;
+  list-style: none;
+}
+
+.body :global(.task-list-item) input[type="checkbox"] {
+  width: 1em;
+  height: 1em;
+  margin: 0 0.5rem 0 0;
+  vertical-align: -0.1em;
+  accent-color: #ffd93b;
+}
+
+.body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.body a:hover {
+  color: var(--accent-hover);
+}
+
+.body strong {
+  font-weight: 600;
+}
+
+.body :not(pre) > code {
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  background: var(--elevated);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.875em;
+}
+
+.body blockquote {
+  margin: 1.5rem 0;
+  padding: 0.6rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--card);
+  color: var(--text-2);
+}
+
+.body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.body hr {
+  margin: 2.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--border);
+}
+
+.body section[data-footnotes] {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9em;
+  color: var(--text-2);
+}
+
+.body sup a {
+  text-decoration: none;
+}
+
+/* syntax highlighting (highlight.js classes) */
+.body :global(.hljs-comment),
+.body :global(.hljs-quote) {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.body :global(.hljs-keyword),
+.body :global(.hljs-selector-tag),
+.body :global(.hljs-literal),
+.body :global(.hljs-doctag) {
+  color: var(--cat-orange);
+}
+
+.body :global(.hljs-string),
+.body :global(.hljs-regexp),
+.body :global(.hljs-addition),
+.body :global(.hljs-attribute) {
+  color: var(--cat-teal);
+}
+
+.body :global(.hljs-title),
+.body :global(.hljs-section),
+.body :global(.hljs-built_in),
+.body :global(.hljs-type),
+.body :global(.hljs-name),
+.body :global(.hljs-selector-class),
+.body :global(.hljs-selector-id) {
+  color: var(--cat-blue);
+}
+
+.body :global(.hljs-number),
+.body :global(.hljs-symbol),
+.body :global(.hljs-variable),
+.body :global(.hljs-template-variable),
+.body :global(.hljs-meta),
+.body :global(.hljs-bullet) {
+  color: var(--cat-purple);
+}
+
+.body :global(.hljs-deletion) {
+  color: var(--danger);
+}
+
+.body :global(.hljs-emphasis) {
+  font-style: italic;
+}
+
+.body :global(.hljs-strong) {
+  font-weight: 700;
+}

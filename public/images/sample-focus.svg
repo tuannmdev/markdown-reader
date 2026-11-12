@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" role="img" aria-label="Minh hoạ góc làm việc yên tĩnh">
+  <rect width="800" height="360" fill="#201E18"/>
+  <rect x="120" y="210" width="560" height="10" rx="5" fill="#3A372E"/>
+  <rect x="250" y="120" width="300" height="90" rx="8" fill="#25231C" stroke="#3A372E" stroke-width="2"/>
+  <rect x="274" y="144" width="140" height="8" rx="4" fill="#FFD93B"/>
+  <rect x="274" y="164" width="250" height="6" rx="3" fill="#59554A"/>
+  <rect x="274" y="180" width="200" height="6" rx="3" fill="#59554A"/>
+  <circle cx="620" cy="110" r="26" fill="none" stroke="#FFD93B" stroke-width="3"/>
+  <circle cx="620" cy="110" r="6" fill="#FFD93B"/>
+</svg>

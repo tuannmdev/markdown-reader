@@ -1,0 +1,65 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0 1.75rem;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display), var(--font), sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.sm {
+  min-height: 38px;
+  padding: 0 1.1rem;
+  font-size: 0.875rem;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--accent-hover);
+  color: var(--accent-ink);
+}
+
+.secondary {
+  background: transparent;
+  border-color: #59554a;
+  color: var(--text);
+}
+
+.secondary:hover:not(:disabled) {
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.dashed {
+  background: transparent;
+  border: 1.5px dashed #59554a;
+  color: var(--text-2);
+}
+
+.dashed:hover:not(:disabled) {
+  border-color: var(--accent-line);
+  color: var(--accent);
+}

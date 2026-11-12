@@ -1,0 +1,42 @@
+.callout {
+  --tone: var(--cat-blue);
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.1rem 0.9rem 1.25rem;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--tone);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.callout > :last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  margin: 0 0 0.4rem !important;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.note {
+  --tone: var(--cat-blue);
+}
+
+.tip {
+  --tone: var(--cat-teal);
+}
+
+.warning {
+  --tone: var(--cat-orange);
+}
+
+.important {
+  --tone: var(--cat-purple);
+}
+
+.caution {
+  --tone: var(--danger);
+}

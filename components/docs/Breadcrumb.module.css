@@ -1,0 +1,36 @@
+.nav {
+  margin-bottom: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.list li + li::before {
+  content: "/";
+  margin: 0 0.6rem;
+  color: var(--muted);
+}
+
+.link {
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.current {
+  color: var(--accent);
+}

@@ -1,0 +1,47 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1.5rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.slot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.right {
+  align-items: flex-end;
+}
+
+.label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.button {
+  max-width: 100%;
+  height: auto;
+  padding-block: 0.9rem;
+  line-height: 1.15;
+  text-align: left;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .right {
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,62 @@
+.list {
+  margin: 0;
+  padding: 0 0 0 0.9rem;
+  list-style: none;
+}
+
+.doc {
+  display: block;
+  margin: 2px 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  color: var(--text-2);
+  font-size: 0.9rem;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.doc:hover {
+  color: var(--text);
+  background: var(--card);
+}
+
+.active,
+.active:hover {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+}
+
+.folder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin: 6px 0 2px;
+  padding: 0.4rem 0.5rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.folder:hover {
+  color: var(--accent);
+}
+
+.chevron,
+.chevronOpen {
+  flex: none;
+  transition: transform 0.15s;
+}
+
+.chevronOpen {
+  transform: rotate(90deg);
+}

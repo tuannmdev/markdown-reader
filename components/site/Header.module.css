@@ -1,0 +1,40 @@
+.header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 40;
+  background: rgba(26, 25, 20, 0.92);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: var(--header-h);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .inner {
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    gap: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .inner :global(a[aria-label^="Markdown Reader"]) > span:last-child {
+    display: none;
+  }
+}

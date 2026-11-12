@@ -1,0 +1,58 @@
+.list {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.active,
+.active:hover {
+  color: var(--accent);
+}
+
+.link {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .link {
+    padding: 0.5rem 0.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media (max-width: 480px) {
+  .list {
+    gap: 0;
+  }
+
+  .link {
+    padding-inline: 0.4rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* The logout control is a button but looks like the other links. */
+button.link {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
